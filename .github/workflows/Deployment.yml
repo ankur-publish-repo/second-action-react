@@ -2,7 +2,7 @@ name: Deploy Project
 on: 
   push:
     paths:
-      - '.github/workflow/Deployment.yml'
+      - '.github/workflows/Deployment.yml'
 jobs:
   test:
     runs-on: ubuntu-latest

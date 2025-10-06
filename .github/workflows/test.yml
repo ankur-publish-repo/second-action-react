@@ -2,7 +2,7 @@ name: Test Project
 on:
   push:
     paths:
-      - '.github/workflow/Deployment.yml'
+      - '.github/workflows/test.yml'
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -17,5 +17,7 @@ jobs:
         run: npm ci
       - name: Run Tests
         run: npm test
+      - name: Run test
+        run: echo "For testing purpose"
         
           
