@@ -3,6 +3,7 @@ on:
   push:
     paths:
       - '.github/workflows/Deployment.yml'
+  workflow_dispatch: 
 jobs:
   test:
     runs-on: ubuntu-latest
