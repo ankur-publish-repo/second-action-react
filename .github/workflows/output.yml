@@ -1,10 +1,8 @@
-# yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
-
 name: Output information
 on: workflow_dispatch
 jobs:
-  info:
-    runs_on: ubuntu-latest
-    steos:
-      - name: Output Github context
-        run: echo "${{ toJSON(github) }}"   
+    info:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Output Github Context
+              run: echo "${{ toJson(github) }}"
